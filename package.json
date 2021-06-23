@@ -1,16 +1,16 @@
 {
-  "name": "blocks-kcc",
+  "name": "blockskcc",
   "version": "1.0.0",
-  "repository": "https://github.com/rs-finance/blocks-kcc",
+  "repository": "https://github.com/rs-finance/blockskcc",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create-local": "graph create rs-finance/blocks-kcc --node http://127.0.0.1:8020",
-    "deploy-local": "graph deploy rs-finance/blocks-kcc --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "deploy": "graph deploy rs-finance/blocks-kcc --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
-    "deploy-staging": "graph deploy $THE_GRAPH_GITHUB_USER/$THE_GRAPH_SUBGRAPH_NAME /rs-finance --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
-    "watch-local": "graph deploy rs-finance/blocks-kcc --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
+    "create-local": "graph create rs-finance/blockskcc --node http://127.0.0.1:8020",
+    "deploy-local": "graph deploy rs-finance/blockskcc --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
+    "deploy": "graph deploy rs-finance/blockskcc --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
+    "deploy-staging": "graph deploy rs-finance/blockskcc --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
+    "watch-local": "graph deploy rs-finance/blockskcc --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.17.1",
