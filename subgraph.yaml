@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Indexing all Kucoin Community Chain Blocks Data
-repository: https://github.com/rs-finance/blocks-kcc
+repository: https://github.com/rs-finance/blockskcc
 schema:
   file: ./schema.graphql
 dataSources:
