@@ -1,0 +1,25 @@
+specVersion: 0.0.2
+description: Indexing all Kucoin Community Chain Blocks Data
+repository: https://github.com/rs-finance/blocks-kcc
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: ConverterRegistryContract
+    network: mainnet
+    source:
+      address: "0x9dfba811a98a78aed3e39f8b303c7121ce9c2558"
+      abi: ConverterRegistryContract
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.3
+      language: wasm/assemblyscript
+      file: ./src/mappings/blocks.ts
+      entities:
+        - ConverterAddition
+      abis:
+        - name: ConverterRegistryContract
+          file: ./abis/ConverterRegistryContract.json
+      blockHandlers:
+        - handler: handleBlock
+
