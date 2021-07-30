@@ -23,4 +23,3 @@ dataSources:
           file: ./abis/ConverterRegistryContract.json
       blockHandlers:
         - handler: handleBlock
-
