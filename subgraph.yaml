@@ -1,12 +1,12 @@
 specVersion: 0.0.2
 description: Indexing all Kucoin Community Chain Blocks Data
-repository: https://github.com/rs-finance/blockskcc
+repository: git@github.com:RS-Finance/kucoin-community-block.git
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: kcc
+    network: mainnet
     source:
       address: "0x9dfba811a98a78aed3e39f8b303c7121ce9c2558"
       abi: ConverterRegistryContract
