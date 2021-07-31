@@ -1,4 +1,4 @@
-# RS Finance | KCC BLOCKS
+# KsF Finance | KCC BLOCKS
 
 Indexing all Kucoin Community Chain Blocks Data
 
