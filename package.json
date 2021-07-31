@@ -1,16 +1,16 @@
 {
-  "name": "blockskcc",
+  "name": "kcc-block",
   "version": "1.0.0",
-  "repository": "https://github.com/rs-finance/blockskcc",
+  "repository": "git@github.com:RS-Finance/kucoin-community-block.git",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create-local": "graph create rs-finance/blockskcc --node http://127.0.0.1:8020",
-    "deploy-local": "graph deploy rs-finance/blockskcc --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "deploy": "graph deploy rs-finance/blockskcc --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
-    "deploy-staging": "graph deploy rs-finance/blockskcc --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
-    "watch-local": "graph deploy rs-finance/blockskcc --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
+    "create-local": "graph create rs-finance/kcc-block --node http://thegraph.ksfswap.info:8020",
+    "deploy-local": "graph deploy rs-finance/kcc-block --debug --ipfs http://thegraph.ksfswap.info:5001 --node http://thegraph.ksfswap.info:8020",
+    "deploy": "graph deploy rs-finance/kcc-block --ipfs http://thegraph.ksfswap.info:5001 --node http://thegraph.ksfswap.info:8020 --debug",
+    "deploy-staging": "graph deploy rs-finance/kcc-block --ipfs http://thegraph.ksfswap.info:5001 --node http://thegraph.ksfswap.info:8020",
+    "watch-local": "graph deploy rs-finance/kcc-block --watch --debug --node http://thegraph.ksfswap.info:8020/ --ipfs http://thegraph.ksfswap.info:5001"
   },
     "devDependencies": {
     "@graphprotocol/graph-cli": "^0.20.0",
