@@ -6,11 +6,11 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create-local": "graph create rs-finance/kcc-block --node https://thegraph.kucoinswap.finance:8020",
-    "deploy-local": "graph deploy rs-finance/kcc-block --debug --ipfs https://thegraph.kucoinswap.finance:5001 --node https://thegraph.kucoinswap.finance:8020",
-    "deploy": "graph deploy rs-finance/kcc-block --ipfs https://thegraph.kucoinswap.finance:5001 --node http://thegraph.ksfswap.info:8020 --debug",
-    "deploy-staging": "graph deploy rs-finance/kcc-block --ipfs https://thegraph.kucoinswap.finance:5001 --node https://thegraph.kucoinswap.finance:8020",
-    "watch-local": "graph deploy rs-finance/kcc-block --watch --debug --node https://thegraph.kucoinswap.finance:8020/ --ipfs https://thegraph.kucoinswap.finance:5001"
+    "create-local": "graph create rs-finance/kcc-block --node http://188.166.181.236:8020",
+    "deploy-local": "graph deploy rs-finance/kcc-block --debug --ipfs http://188.166.181.236:5001 --node http://188.166.181.236:8020",
+    "deploy": "graph deploy rs-finance/kcc-block --ipfs http://188.166.181.236:5001 --node http://188.166.181.236:8020 --debug",
+    "deploy-staging": "graph deploy rs-finance/kcc-block --ipfs http://188.166.181.236:5001 --node http://188.166.181.236:8020",
+    "watch-local": "graph deploy rs-finance/kcc-block --watch --debug --node http://188.166.181.236:8020/ --ipfs http://188.166.181.236:5001"
   },
     "devDependencies": {
     "@graphprotocol/graph-cli": "^0.20.0",
